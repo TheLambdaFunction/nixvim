@@ -28,14 +28,17 @@
       options.desc = "Opencode Explain Selection";
     }
   ];
-
   extraConfigLua = ''
+    local opencode_cmd = "opencode --port 12345"
+
     vim.g.opencode_opts = {
       port = 12345,
       server = {
         start = function()
-          vim.fn.jobstart({ "opencode", "--port", "12345" })
+          vim.cmd("terminal " .. opencode_cmd)
         end,
+        stop = function() end,
+        toggle = function() end,
       },
     }
   '';
