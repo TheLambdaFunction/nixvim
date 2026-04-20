@@ -38,6 +38,7 @@
     ./treesj.nix
     ./web-devicons.nix
     ./clipboard.nix
+    ./opencode.nix
   ];
 
   config = {
