@@ -181,6 +181,13 @@
       action = "<cmd>lua Snacks.picker.lsp_type_definitions()<CR>";
     }
 
+    # Search keymaps
+    {
+      key = "<leader>sk";
+      mode = [ "n" ];
+      action = "<cmd>lua Snacks.picker.keymaps()<CR>";
+    }
+
     # LSP Symbols
     {
       key = "<leader>ss";
