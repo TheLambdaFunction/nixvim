@@ -38,6 +38,13 @@
         '';
         packages = [
           nvim
+
+          pkgs.ghostty
+          pkgs.imagemagick
+          pkgs.ghostscript
+          pkgs.miktex
+          pkgs.mermaid-cli
+          pkgs.xsel # pick something for wayland if you **really** want to use that shit
         ];
       };
     };
