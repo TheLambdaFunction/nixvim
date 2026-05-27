@@ -51,9 +51,18 @@
         pyright = {
           enable = true;
         };
+
+        # Had to ask the community how to enable staticcheck here
+        # See: https://github.com/nix-community/nixvim/discussions/4343
         gopls = {
           enable = true;
+          settings = {
+            gopls = {
+              staticcheck = true;
+            };
+          };
         };
+
         terraformls = {
           enable = true;
         };

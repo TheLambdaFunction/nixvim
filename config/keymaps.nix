@@ -7,9 +7,25 @@
       action = "<cmd>YankyRingHistory<CR>";
     }
     {
-      key = "<leader>qq";
+      key = "]h";
       mode = [ "n" ];
-      action = "<cmd>qa<CR>";
+      action = "<cmd>Gitsigns next_hunk<CR>";
     }
+    {
+      key = "[h";
+      mode = [ "n" ];
+      action = "<cmd>Gitsigns prev_hunk<CR>";
+    }
+    {
+      key = "<leader>ghs";
+      mode = [ "n" ];
+      action = "<cmd>Gitsigns stage_hunk<CR>";
+    }
+    {
+      key = "<leader>ghr";
+      mode = [ "n" ];
+      action = "<cmd>Gitsigns reset_hunk<CR>";
+    }
+
   ];
 }
